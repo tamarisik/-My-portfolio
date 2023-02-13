@@ -1,0 +1,196 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: rgb(7, 7, 78);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 32px;
+    color: white;
+  }
+ .logo a:hover {
+    color: #4CAF50;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  header a:hover {
+    color: red;
+  }
+  
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  /* Home 1 sectopn */
+  #home {
+    background-image: url(pictures/m.jpg);
+    height: 500px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  
+  }
+  .home-text {
+    float: left;
+    color: rgb(242, 242, 248);
+    font-size: 30px;
+    
+ 
+  }
+  @media (max-width: 767px) {
+    #home {
+      grid-template-columns: auto;
+    }
+  }
+
+  /* About 2 - section */
+  #about {
+    background-color: rgb(25, 60, 129);
+    margin: 10px 0;
+  }
+  .about {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+  
+  }
+  .title-h {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  .skill > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .skill ul li {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* Project 3- section */
+  #projects {
+    background-color: lightyellow;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+/* button */
+  .button1 {
+    background-color: hsl(262, 87%, 21%);
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+   
+  }
+  .button1:hover {
+    background-color: #6234ea;
+  }
+  
+ @media screen and (max-width: 667px) {
+  #projects {
+    background-color: rgb(12, 107, 175);
+    grid-template-columns: auto;
+  }
+ }
+  
+  /* contact - 4 section  */
+
+
+  /* form */
+
+  .form-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    max-width: 600px;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  label,
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+  }
+
+  input[type="submit"] {
+    background-color: #6234ea;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  input[type="submit"]:hover {
+    opacity: 0.8;
+    background-color: rgb(14, 14, 47);
+  } 
+
+  #contact {
+    background-color: rgb(78, 106, 181);
+    display: grid;
+    grid-template-columns: 40% auto;
+    
+  }
+  .contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  @media screen and (max-width: 767px) {
+    .contact {
+      grid-template-columns: auto;
+    }
+    .contact-text {
+     margin-bottom: 10px;
+      
+    }
+  }
